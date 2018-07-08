@@ -36,13 +36,11 @@ def restaurant_detail(request):
         'food_type': 'rice',
     }
 
-    my_objects = [
-           bukhari,
-           bo_zaid,
-           kfc,
-    ]
+    # my_objects = [
+    #        bukhari,
+    # ]
 
     context = {
-        'my_object': my_objects,
+        'my_object': bukhari,
     }
     return render(request, 'detail.html', context)
